@@ -16,9 +16,47 @@ public class Main {
         do podanych cyfr przez użytkownika,
         g) gdy użytkownik wciśnie 0 ma wyświetlić się status KONIEC w innym wypadku KONTYNUUJEMY :),
         */
+        enum LiczbyEnum {Jeden, Dwa, Trzy, Cztery, Piec, Szesc}
+        enum StatusEnum {KONTYNUUJEMY, KONIEC}
+        Scanner forLoop = new Scanner(System.in);
+        boolean variableforloop = false;
+        while (variableforloop = true) {
+            switch (forLoop.nextInt()) {
+                case 1:
+                    System.out.println(LiczbyEnum.Jeden);
+                    System.out.println(StatusEnum.KONTYNUUJEMY);
+                    break;
+                case 2:
+                    System.out.println(LiczbyEnum.Dwa);
+                    System.out.println(StatusEnum.KONTYNUUJEMY);
+                    break;
 
-        /* statusy i wybór ze switch case to najczęstsze użycia enumów, enumy są często używane
-        * w różnego rodzaju listach, selectach jako krótkie opcje wyboru np. jako status A, X (Aktualny, Usunięty) */
+                case 3:
+                    System.out.println(LiczbyEnum.Trzy);
+                    System.out.println(StatusEnum.KONTYNUUJEMY);
+                    break;
 
+                case 4:
+                    System.out.println(LiczbyEnum.Cztery);
+                    System.out.println(StatusEnum.KONTYNUUJEMY);
+                    break;
+                case 5:
+                    System.out.println(LiczbyEnum.Piec);
+                    System.out.println(StatusEnum.KONTYNUUJEMY);
+                    break;
+                case 6:
+                    System.out.println(LiczbyEnum.Szesc);
+                    System.out.println(StatusEnum.KONTYNUUJEMY);
+                    break;
+                case 0:
+                    System.out.println(StatusEnum.KONIEC);
+                    variableforloop = true;
+                    return;
+
+            }
+        }
     }
 }
+
+
+
