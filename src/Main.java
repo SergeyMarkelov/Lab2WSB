@@ -6,6 +6,28 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Punkt punktA = new Punkt(2);
+        punktA.toString();
+        System.out.println(punktA.toString());
+
+        Punkt punkt = new Punkt(1,2,3);
+        punktA.toString();
+        System.out.println(punktA.toString());
+
+        punktA.setpX(4);
+        punktA.toString();
+        System.out.println(punktA.toString());
+
+        System.out.printf("pX = %d \n", punktA.getpX());
+        System.out.printf("x = %d , y = %d , pX = %d\n", punkt.getX(), punkt.getY(), punkt.getpX());
+        System.out.println("Suma punktuA: " + punktA.sumaP());
+        System.out.println("Suma punktu: " + punkt.suma());
+        System.out.println("Roznica punktuA: " + punktA.roznicaP();
+        System.out.println("Roznica punktu: " + punkt.roznica();
+
+
+
+
         /* ćw 3 klasy */
 
         /*  zad.1 - Najpierw należy uzupełnić kod w klasie Punkt.java,
